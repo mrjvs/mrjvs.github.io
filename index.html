@@ -485,16 +485,6 @@ AOS.init({
 </script>
         <script type="application/javascript" src="data.json">
         </script>
-        <script type="application/javascript">
-            document.getElementById("ptitle").innerHTML = pageData["head"]["pageTitle"];
-            document.getElementById("ptext").innerHTML = pageData["head"]["pageText"];
-            document.getElementById("htitle").innerHTML = pageData["head"]["htmlTitle"];
-            
-            document.getElementById("about").innerHTML = pageData["about"];
-            for (var i = 0; i < pageData["pages"].length; i++) {
-                document.getElementById("ELpages").innerHTML += '<div class="wrap2"><a href="#permalink"><div class="content-item" data-aos="anim2"><div class="content-wrap" data-aos="anim1" data-aos-delay="300"><h2 class="section-heading">' + pageData["pages"][i]["title"] +'</h2><p class="section-paragraph">' + pageData["pages"][i]["text"] +'</p></div></div></a></div>';
-            }
-        </script>
 <section id="wrapcanvas" style="overflow: hidden;">
     <div class="animateme">
             <ul class="bg-bubbles">
@@ -560,4 +550,14 @@ AOS.init({
 </div>
    </section> 
 </body>
+            <script type="application/javascript">
+            document.getElementById("ptitle").innerHTML = pageData["head"]["pageTitle"];
+            document.getElementById("ptext").innerHTML = pageData["head"]["pageText"];
+            document.getElementById("htitle").innerHTML = pageData["head"]["htmlTitle"];
+            
+            document.getElementById("about").innerHTML = pageData["about"];
+            for (var i = 0; i < pageData["pages"].length; i++) {
+                document.getElementById("ELpages").innerHTML += '<div class="wrap2"><a href="#permalink"><div class="content-item" data-aos="anim2"><div class="content-wrap" data-aos="anim1" data-aos-delay="300"><h2 class="section-heading">' + pageData["pages"][i]["title"] +'</h2><p class="section-paragraph">' + pageData["pages"][i]["text"] +'</p></div></div></a></div>';
+            }
+        </script>
 </html>
