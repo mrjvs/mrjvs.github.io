@@ -557,7 +557,13 @@ AOS.init({
             
             document.getElementById("about").innerHTML = pageData["about"];
             for (var i = 0; i < pageData["pages"].length; i++) {
-                document.getElementById("ELpages").innerHTML += '<div class="wrap2"><a href="#permalink"><div class="content-item" data-aos="anim2"><div class="content-wrap" data-aos="anim1" data-aos-delay="300"><h2 class="section-heading">' + pageData["pages"][i]["title"] +'</h2><p class="section-paragraph">' + pageData["pages"][i]["text"] +'</p></div></div></a></div>';
+                var str = "";
+                if (pageData["pages"][i]["link"] == null) {
+                    str = '<div class="wrap2"><div class="content-item" data-aos="anim2"><div class="content-wrap" data-aos="anim1" data-aos-delay="300"><h2 class="section-heading">' + pageData["pages"][i]["title"] +'</h2><p class="section-paragraph">' + pageData["pages"][i]["text"] +'</p></div></div></div>';
+                } else {
+                    str = '<div class="wrap2"><a href="' + pageData["pages"][i]["link"] + '"><div class="content-item" data-aos="anim2"><div class="content-wrap" data-aos="anim1" data-aos-delay="300"><h2 class="section-heading">' + pageData["pages"][i]["title"] +'</h2><p class="section-paragraph">' + pageData["pages"][i]["text"] +'</p></div></div></a></div>';
+                }
+                document.getElementById("ELpages").innerHTML += str;
             }
         </script>
 </html>
