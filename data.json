@@ -6,6 +6,6 @@ var pageData = {"head":
                 "pages":[
                 {"title":"WebNBT",
                 "text":"WebNBT is an online NBT file editor, nbt is specific gzipped file type that is used by minecraft.",
-                "link":"https://mrjvs.ml/WebNBT"
+                "link":"http://mrjvs.ml/WebNBT"
                }
 ]};
