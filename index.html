@@ -48,7 +48,6 @@ text-decoration: none;
     transition: all 1s;
     padding: 20px;
     z-index: -2;
-    cursor: pointer;
 }
 .bg-bubbles div div:hover {
     letter-spacing: 0.4em;
@@ -235,6 +234,152 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
           animation-delay: 9s;
   border-radius:50em;
     background: rgba(183,222,237,1);
+}
+			@media only screen  
+and (min-device-width: 320px)
+and (max-device-width : 640px) {
+
+	.bg-bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #ff1a1a;
+  right: 60px;
+  -webkit-animation: square 26s infinite;
+  animation: square 26s infinite;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  opacity:0;
+    pointer-events: none;
+	
+background: rgba(183,222,237,1);
+background: -moz-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(252,225,199,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(183,222,237,1)), color-stop(0%, rgba(113,206,239,1)), color-stop(0%, rgba(33,180,226,1)), color-stop(100%, rgba(252,225,199,1)));
+background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(252,225,199,1) 100%);
+background: -o-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(252,225,199,1) 100%);
+background: -ms-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(252,225,199,1) 100%);
+background: linear-gradient(to bottom, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(252,225,199,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#fce1c7', GradientType=0 );
+	background-attachment: fixed;
+}
+	
+	.bg-bubbles li:nth-child(1) {
+  bottom: 3%;
+  border-radius:50em;
+  background:transparent;
+  border:4px solid #b7deed;
+}
+.bg-bubbles li:nth-child(2) {
+  bottom: 6%;
+  width: 25px;
+  height: 25px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+    background: rgba(183,222,237,1);
+}
+.bg-bubbles li:nth-child(3) {
+  bottom: 15%;
+  width: 90px;
+  height: 90px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+    background: rgba(183,222,237,1);
+}
+.bg-bubbles li:nth-child(4) {
+  bottom: 40%;
+  width: 40px;
+  height: 40px;
+  -webkit-animation-duration: 23s;
+          animation-duration: 23s;
+    background: rgba(183,222,237,1);
+}
+.bg-bubbles li:nth-child(5) {
+  bottom: 70%;
+  background:transparent;
+  border:4px solid #abc7d1;
+}
+.bg-bubbles li:nth-child(6) {
+  bottom: 90%;
+  width: 40px;
+  height: 40px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  border-radius:50em;
+  background:transparent;
+  border:4px solid #abc7d1;
+}
+.bg-bubbles li:nth-child(7) {
+  bottom: 32%;
+  width: 30px;
+  height: 30px;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  background:transparent;
+  border:4px solid #abc7d1;
+}
+.bg-bubbles li:nth-child(8) {
+  bottom: 55%;
+  width: 25px;
+  height: 25px;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-duration: 41s;
+          animation-duration: 41s;
+    background: rgba(33,180,226,1);
+}
+.bg-bubbles li:nth-child(9) {
+  bottom: 30%;
+  width: 70px;
+  height: 70px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 41s;
+          animation-duration: 41s;
+  border-radius:50em;
+  background:transparent;
+  border:4px solid #fce0c7;
+}
+.bg-bubbles li:nth-child(10) {
+  bottom: 90%;
+  width: 35px;
+  height: 35px;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+    background: rgba(183,222,237,1);
+}
+.bg-bubbles li:nth-child(11) {
+  bottom: 10%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+  border-radius:50em;
+    background: rgba(183,222,237,1);
+}
+.bg-bubbles li:nth-child(12) {
+  bottom: 55%;
+  width: 90px;
+  height: 90px;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  background:transparent;
+  border:4px solid #fce0c7;
+}
+.bg-bubbles li:nth-child(13) {
+  bottom: 65%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+  border-radius:50em;
+    background: rgba(183,222,237,1);
+}
+	
+	
 }
 @-webkit-keyframes square {
   0% {
