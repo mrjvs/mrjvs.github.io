@@ -7,5 +7,17 @@ var pageData = {"head":
                 {"title":"WebNBT",
                 "text":"WebNBT is an online NBT file editor, nbt is specific gzipped file type that is used by minecraft.",
                 "link":"http://mrjvs.ml/WebNBT"
-               }
+               },
+                "projects": [
+                  {"name": "Designing",
+                  "desc": "I am designing a webpage for every program that I have released."
+                  },
+                  {"name": "MCTools",
+                  "desc": "I am planning on making a website for helpful tools for minecraft mapmakers. I already have some ideas: NBStoFunction and MicroBuild."
+                  },
+                  {"name": "MCFunctions",
+                  "desc": "An awesome website where you are able to upload functions, advancements and once-commands. Everybody can use them for free if you give credit."
+                  }
+                
+                ]
 ]};
