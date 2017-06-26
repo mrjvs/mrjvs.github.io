@@ -668,17 +668,17 @@ once: true
 		<div class="project-text row workrow center">
 		<h1 class="section-heading">What I'm working on</h1>
 			<div class="project-container">
-			<div class="col-sm-4 project projectEX" data-aos="fade-left"><h3 class="section-heading">project 1</h3><p id="about" class="section-paragraph">
+			<div class="col-sm-4 project projectEX" data-aos="fade-left"><h3 id="headP1" class="section-heading">...</h3><p id="textP1" class="section-paragraph">
      
-    This is a description of a project that I'm working on.
+    ...
     </p></div>
-			<div class="col-sm-4 project" data-aos="fade-left" data-aos-delay="250"><h3 class="section-heading">project 1</h3><p id="about" class="section-paragraph">
+			<div class="col-sm-4 project" data-aos="fade-left" data-aos-delay="250"><h3 id="headP2" class="section-heading">...</h3><p id="textP2" class="section-paragraph">
      
-    This is a description of a project that I'm working on.
+    ...
     </p></div>
-			<div class="col-sm-4 project" data-aos="fade-left" data-aos-delay="500"><h3 class="section-heading">project 1</h3><p id="about" class="section-paragraph">
+			<div class="col-sm-4 project" data-aos="fade-left" data-aos-delay="500"><h3 id="headP3" class="section-heading">...</h3><p id="textP3" class="section-paragraph">
      
-    This is a description of a project that I'm working on.
+    ...
     </p></div>
 			</div>
 	</div>
@@ -720,6 +720,12 @@ once: true
             document.getElementById("ptitle").innerHTML = pageData["head"]["pageTitle"];
             document.getElementById("ptext").innerHTML = pageData["head"]["pageText"];
             document.getElementById("htitle").innerHTML = pageData["head"]["htmlTitle"];
+	    document.getElementById("headP1").innerHTML = pageData["projects"][0]["name"];
+            document.getElementById("headP2").innerHTML = pageData["projects"][1]["name"];
+            document.getElementById("headP3").innerHTML = pageData["projects"][2]["name"];
+    	document.getElementById("textP1").innerHTML = pageData["projects"][0]["desc"];
+            document.getElementById("textP2").innerHTML = pageData["projects"][1]["desc"];
+            document.getElementById("textP3").innerHTML = pageData["projects"][2]["desc"];
             
             document.getElementById("about").innerHTML = pageData["about"];
             for (var i = 0; i < pageData["pages"].length; i++) {
