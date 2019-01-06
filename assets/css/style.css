@@ -1,0 +1,331 @@
+/* general layout */
+html, body {
+    padding: 0;
+    font-size: 1em;
+    margin: 0;
+    background-color: #F1F1F1; /* BG COLOR */
+    font-family: 'Open Sans', 'Segoe UI', Tahoma, Verdana, Arial, sans-serif;
+}
+
+header {
+    height: 100vh;
+    padding: 5rem 20vw 15rem 20vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+header .scroll-text {
+    display: block;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding: 1rem;
+}
+
+footer {
+    box-sizing: border-box;
+    display: flex;
+    padding: 10rem 15vw;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+footer .txt {
+    width: 30rem;
+}
+
+.portfolio .portfolio-item {
+    background-color: #FFF; /* BG COLOR */
+}
+.portfolio .portfolio-item:nth-child(2n) {
+    background-color: #F6F6F6; /* BG COLOR */
+}
+
+.box {
+    text-align: center;
+    padding: 5rem;
+    background-color: #FFF;
+    box-shadow: 0 3px 29px 0 rgba(0, 0, 0, 0.1);
+}
+.box p {
+    width: 25rem;
+    margin: auto;
+    max-width: 100%;
+}
+
+/* portfolio styling */
+.portfolio-item {
+    padding: 5rem 10vw;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.portfolio-item .portfolio-image {
+    margin: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.portfolio-item .portfolio-image img {
+    overflow: hidden;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.portfolio-item .portfolio-text {
+    padding: 1em;
+    align-self: center;
+    width: 30vw;
+    flex: 1;
+    padding-right: 10rem;
+}
+
+/* text styling */
+h1 {
+    font-size: 3em;
+    color: #291F1F;
+    font-weight: bold;
+    margin: 0;
+}
+p {
+    color: #4C4C4C;
+}
+.txt-subhead {
+    margin: 0;
+    color: #919191;
+}
+.portfolio .portfolio-text h1 {
+    font-size: 2em;
+}
+a, a:active, a:focus, a:visited {
+    text-decoration: none;
+    color: #FF00AA;
+}
+a:hover {
+    color: #ce0089;
+}
+.ico-link {
+    padding-left: 1.5em;
+    position: relative;
+}
+.ico-link:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 1.2em;
+    width: 1.2em;
+    background-image: url('/assets/img/link.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: -.05em;
+    left: -.1em;
+}
+.ico-github {
+    padding-left: 1.5em;
+    position: relative;
+}
+.ico-github:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 1.2em;
+    width: 1.2em;
+    background-image: url('/assets/img/github.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: -.1em;
+    left: -.1em;
+}
+.ico-twitter {
+    padding-left: 1.5em;
+    position: relative;
+}
+.ico-twitter:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    background-image: url('/assets/img/twitter.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: -.5em;
+    left: -.5em;
+}
+
+/* figures */
+
+.the-box {
+    height: 20rem;
+    width: 20rem;
+    background-color: #FB5A81;
+    border-radius: 7px;
+    margin: 5rem auto;
+}
+.figure-circle:before {
+    content: "";
+    display: block;
+    background-color: #FFF;
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 3px 29px 0 rgba(0, 0, 0, 0.1);
+}
+.figure-circle:after {
+    content: "";
+    display: block;
+    background-color: #FF1049;
+    border-radius: 50%;
+    opacity: .69; /* heh heh */
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 3px 29px 0 rgba(0, 0, 0, 0.1);
+}
+.figure-circle {
+    position: absolute;
+    right: 25vw;
+    width: 15rem;
+    height: 15rem;
+}
+.figure-square:before {
+    content: "";
+    display: block;
+    background-color: #FFF;
+    height: 14rem;
+    width: 14rem;
+    position: absolute;
+    left: 0;
+    transform: rotateZ(45deg);
+    box-shadow: 0 3px 29px 0 rgba(0, 0, 0, 0.1);
+}
+.figure-square:after {
+    content: "";
+    display: block;
+    background-color: #FF1049;
+    opacity: .69; /* heh heh */
+    height: 14rem;
+    width: 14rem;
+    position: absolute;
+    right: 0;
+    transform: rotateZ(45deg);
+    box-shadow: 0 3px 29px 0 rgba(0, 0, 0, 0.1);
+}
+.figure-square {
+    position: absolute;
+    left: 25vw;
+    top: 10rem;
+    width: 7rem;
+    height: 7rem;
+}
+
+/* responsive layout */
+@media screen and (max-width: 1300px) {
+    header {
+        padding: 5rem 10vw 15rem 10vw;
+    }
+    .figure-circle {
+        position: absolute;
+        right: 20vw;
+        width: 15rem;
+        height: 15rem;
+    }
+    footer {
+        padding: 10rem 4vw;
+    }
+    .figure-square {
+        left: 20vw;
+    }
+}
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    header {
+        flex-direction: row;
+        padding: 60vh 2em 2em 2em;
+    }
+    .figure-circle {
+        position: absolute;
+        width: 20vw;
+        height: 20vw;
+        top: 20vh;
+        right: auto;
+        margin: auto;
+    }
+    .figure-circle:before,.figure-circle:after {
+        height: 30vw;
+        width: 30vw;
+    }
+    footer {
+        padding: 20rem 2rem 10rem 2rem;
+    }
+    footer .txt {
+        margin: auto;
+    }
+    .figure-square {
+        left: 20vw;
+    }
+    .figure-square {
+        left: 0;
+        right: 0;
+        top: 7rem;
+        width: 6rem;
+        height: 6rem;
+        margin: auto;
+    }
+    .figure-square:before,.figure-square:after {
+        height: 10rem;
+        width: 10rem;
+    }
+    .box {
+        text-align: center;
+        padding: 5rem 1rem;
+    }
+    .portfolio-item {
+        flex-direction: column;
+    }
+    .portfolio-item .portfolio-text {
+        width: auto;
+        padding: 0;
+        margin: 0 1rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    header {
+        text-align: center;
+    }
+    footer .txt {
+        width: 100%;
+    }
+    .figure-circle {
+        position: absolute;
+        width: 7rem;
+        height: 7rem;
+    }
+    .figure-circle:before,.figure-circle:after {
+        height: 10rem;
+        width: 10rem;
+    }
+    .the-box {
+        height: 15rem;
+        width: 15rem;
+    }
+    .portfolio-item {
+        padding: 5rem 5vw;
+    }
+}

@@ -1,108 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/default.css">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Mrjvs">
+    <meta name="application-name" content="Mrjvs">
+    <meta name="msapplication-TileColor" content="#f6557b">
+    <meta name="msapplication-config" content="/assets/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <meta property="og:image:width" content="279">
+    <meta property="og:image:height" content="279">
+    <meta property="og:title" content="Mrjvs - Designer and Web Developer">
+    <meta property="og:description" content="Mrjvs specializes in user interface design and web development. He works on both of these subjects with great passion.">
+    <meta property="og:url" content="https://www.mrjvs.com">
+    <meta property="og:image" content="https://www.mrjvs.com/assets/img/og-image.jpg">
+    
+    <meta name="description" content="Mrjvs specializes in user interface design and web development. He works on both of these subjects with great passion.">
+    <meta name="robots" content="index, follow">
+    <title>mrjvs - Designer and Web Developer</title>
 
-    <!-- JS -->
-    <script src="assets/js/smallMouseMove.js"></script>
-
-    <title>mrjvs &mdash; fullstack web developer</title>
+    <!-- styling -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body class="home-page">
+<body>
     <header>
-        <nav>
-            <a href="#playground">My playground</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact me</a>
-            <a class="hamburger openModal"></a>
-        </nav>
-        <div class="head-container">
-            <div class="deco-circles deco-circles-align-left-center move-mouse"></div>
-            <div class="deco-circles deco-circles-align-top-right move-mouse"></div>
-            <h1><span>mr</span>jvs</h1>
-            <hr>
-            <h3>I am a full stack web developer, <br>or at least I would like to think so.</h3>
+        <div>
+            <h1>MRJVS</h1>
+            <p class="txt-subhead">UI designer, Frontend and backend web developer.</p>
         </div>
+        <div class="figure-circle"></div>
+        <p class="scroll-text">Scroll down for more info</p>
     </header>
-    <div class="mobnav-overlay" id="ModalOverlay"></div>
-    <div class="mobnav-container closeModal" id="ModalContainer">
-        <div class="mobnav-card" id="Modal">
-            <a class="close closeModal">X</a>
-            <p class="head"><span>mr</span>jvs</p>
-            <a class="closeModal" href="#playground">My playground</a>
-            <a class="closeModal" href="#portfolio">Portfolio</a>
-            <a class="closeModal" href="#contact">Contact me</a>
-        </div>
-    </div>
-    <section>
-        <h1 class="special-heading" id="playground" data-content="My playground"><span>My playground</span></h1>
-        <div class="grid2by2-container">
-            <article>
-                <h2>Playground item 1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos molestiae quidem sequi esse repellat consequatur deserunt nostrum laudantium facilis nesciunt, obcaecati odit corporis cumque quod voluptatum, impedit, iure rerum?</p>
-            </article>
-            <article>
-                <h2>Playground item 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos molestiae quidem sequi esse repellat consequatur deserunt nostrum laudantium facilis nesciunt, obcaecati odit corporis cumque quod voluptatum, impedit, iure rerum?</p>
-            </article>
-            <article>
-                <h2>Playground item 3</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos molestiae quidem sequi esse repellat consequatur deserunt nostrum laudantium facilis nesciunt, obcaecati odit corporis cumque quod voluptatum, impedit, iure rerum?</p>
-            </article>
-            <article>
-                <h2>Playground item 4</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos molestiae quidem sequi esse repellat consequatur deserunt nostrum laudantium facilis nesciunt, obcaecati odit corporis cumque quod voluptatum, impedit, iure rerum?</p>
-            </article>
-        </div>
+    <section class="portfolio">
+        <article class="portfolio-item">
+            <div class="portfolio-image">
+                <img src="/assets/img/pretendo.png" alt="Pretendo logo">
+            </div>
+            <div class="portfolio-text">
+                <h1>Pretendo</h1>
+                <p class="txt-subhead">Front-end web / NodeJS / Branding</p>
+                <p>Pretendo is an open source Nintendo Network replacement that aims to build custom servers for the WiiU and 3DS family of consoles. I contributed by handling the branding of the project and developing the full website including the backend.</p>
+                <a class="ico-link" href="#">Cannot be linked yet</a>
+            </div>
+        </article>
+        <article class="portfolio-item">
+            <div class="portfolio-image">
+                <img src="/assets/img/cascade.png" alt="Pretendo logo">
+            </div>
+            <div class="portfolio-text">
+                <h1>Pretendo</h1>
+                <p class="txt-subhead">Front-end web / UX design / Branding</p>
+                <p>Cascade is a discord bot that focuses on user experience and customisation. It will provide many features you can do anything with it. I contributed by doing the branding design and made sure the UX was perfect. This project has not been released yet.</p>
+                <a class="ico-link" href="#">Cannot be linked yet</a>
+            </div>
+        </article>
     </section>
-    <section>
-        <h1 class="special-heading lots-of-margin-bottom" id="portfolio" data-content="Portfolio"><span>Portfolio</span></h1>
-        <div class="portfolio-container">
-            <div class="deco-circles bigger deco-circles-align-left-center move-mouse"></div>
-            <div class="deco-circles deco-circles-align-top-right move-mouse"></div>
-            <div class="card-container">
-                <div class="card">
-                    <h2>Portfolio item 1</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, repudiandae accusantium eos quis itaque totam, ratione architecto beatae pariatur cumque illo molestiae dolorem possimus nostrum cupiditate, numquam ipsam animi veritatis!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus incidunt at perspiciatis aliquid, iusto natus? Molestias accusantium fuga repellat. Officia, possimus! Sit perferendis commodi quam impedit architecto illo reiciendis eligendi?</p>
-                </div>
-                <div>
-                    <div class="indicator active"></div>
-                    <div class="indicator"></div>
-                    <div class="indicator"></div>
-                    <div class="indicator"></div>
-                    <div class="indicator"></div>
-                </div>
-            </div>
+    <section class="box">
+        <h1>My personality box</h1>
+        <p>Do you want to know me a bit more personally? This box contains all kinds of information about me: What I like, What I dislike, How I view certain things and maybe even some concepts. Give it a try and click on the box.</p>
+        <div class="box-container" id="box-container">
+            <div class="the-box"></div>
         </div>
-    </section>
-    <section class="contact-container">
-            <h1 class="special-heading a-bit-of-margin-bottom" id="contact" data-content="Contact me"><span>Contact me</span></h1>
-            <div class="gridcontact-container">
-                <div class="input-container">
-                    <input type="text" placeholder="Your email...">
-                </div>
-                <div class="input-container">
-                    <input type="text" placeholder="The subject...">
-                </div>
-                <div class="input-container gridcontact-itembig">
-                    <textarea placeholder="The content..."></textarea>
-                </div>
-            </div>
-            <div class=" text-align-center-mobile text-align-right contact-container">
-                <button class="fancybutton">Send</button>
-            </div>
     </section>
     <footer>
-        <p>Website made by mrjvs, wow what a suprise.<br>This is a design concept, not meant for use yet.</p>
+        <div class="txt">
+            <h1>Did you enjoy it?</h1>
+            <p>If you did then <a href="#">Consider sending me an email</a>. Maybe I am interested in yourp roject and we can then work together to make your product the best. It doesn't hurt to try so please do, I am always interested in conversation.</p>
+            <a class="ico-github" href="https://www.github.com/mrjvs">https://www.github.com/mrjvs</a><br>
+            <a class="ico-twitter" href="https://www.twitter.com/TWmrjvs">https://www.twitter.com/TWmrjvs</a>
+        </div>
+        <div class="figure-square"></div>
     </footer>
-
-    <!-- after load scripts -->
-    <script src="assets/js/mobnav.js"></script>
 </body>
 </html>
