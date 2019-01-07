@@ -31,6 +31,9 @@
     <!-- styling -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
     <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- scripts -->
+    <script src="/assets/js/box.js"></script>
 </head>
 <body>
     <header>
@@ -68,8 +71,27 @@
     <section class="box">
         <h1>My personality box</h1>
         <p>Do you want to know me a bit more personally? This box contains all kinds of information about me: What I like, What I dislike, How I view certain things and maybe even some concepts. Give it a try and click on the box.</p>
-        <div class="box-container" id="box-container">
-            <div class="the-box"></div>
+        <div class="box-container">
+            <div class="card-container" id="box-container">
+                <div class="personality-card the-box">
+                    <div class="pink-box" onclick="openBox();"></div>
+                    <div class="personality-card-image" style="background-image: url('https://gonintendo.com/system/stories/promo_images/000/301/934/original/vic.png')"></div>
+                    <h1>Celeste</h1>
+                    <p>I absolutely love celeste, I think its the best game that exists. I has an important message about mental health that ties deeply into the gameplay and I have never experienced something like that before in my life. It felt real.</p>
+                    <div class="button-container">
+                        <button onclick="nextCard(this.parentNode.parentNode);">See another</button>
+                    </div>
+                </div>
+
+                <div class="personality-card the-box card-notshown">
+                    <div class="personality-card-image" style="background-image: url('https://gonintendo.com/system/stories/promo_images/000/301/934/original/vic.png')"></div>
+                    <h1>Celeste</h1>
+                    <p>I absolutely love celeste, I think its the best game that exists. I has an important message about mental health that ties deeply into the gameplay and I have never experienced something like that before in my life. It felt real.</p>
+                    <div class="button-container">
+                        <button onclick="nextCard(this.parentNode.parentNode);">See another</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <footer>

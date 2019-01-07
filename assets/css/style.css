@@ -162,15 +162,141 @@ a:hover {
     left: -.5em;
 }
 
-/* figures */
-
-.the-box {
+/* the box */
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.personality-card.the-box {
     height: 20rem;
     width: 20rem;
+    margin: 5rem auto;
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    z-index: 55;
+    transition: width .3s ease-in-out, height .3s ease-in-out, top .3s ease-in-out;
+    background-color: white;
+    padding: 2em 3em;
+    text-align: left;
+    box-shadow: 0 3px 29px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-container .personality-card {
+    transition: width .3s ease-in-out, height .3s ease-in-out, transform .2s ease-in-out, opacity .2s ease-in-out, top .3s ease-in-out;
+    opacity: 1;
+    left: 0;
+    right: 0;
+}
+.personality-card.the-box .pink-box {
     background-color: #FB5A81;
     border-radius: 7px;
-    margin: 5rem auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: width .25s ease-in-out, border-radius .25s ease-in-out, transform .2s ease-in-out;
 }
+.personality-card.the-box .personality-card-image {
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    margin: 0 auto 2rem auto;
+    background-size: cover;
+    border-radius: 50%;
+}
+.personality-card.the-box h1 {
+    font-size: 1.9em;
+    text-align: center;
+    margin-bottom: .5em;
+}
+.personality-card.the-box p {
+    flex: 1;
+}
+.personality-card.the-box .button-container {
+    text-align: center;
+}
+.personality-card.the-box button {
+    display: inline-block;
+    font-size: 1em;
+    padding: .8em 4em;
+    color: #FFF;
+    font-weight: normal;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    background-color: #EA5478;
+    cursor: pointer;
+}
+.personality-card.the-box button:hover {
+    background-color: #c2516b;
+}
+/* box animations */
+.personality-card.the-box .pink-box:hover {
+    background-color: #c2516b;
+    transform: scale(1.05) rotate(2deg);
+}
+.card-container.open .personality-card.the-box .pink-box {
+    cursor: default;
+}
+.card-container.open .personality-card.the-box .pink-box:hover {
+    transform: none;
+    background-color: #EA5478;
+}
+.card-container {
+    position: relative;
+}
+.card-container {
+    width: 100%;
+    height: 30rem;
+    margin: 5rem;
+}
+.card-container.open .personality-card.the-box {
+    animation: card-bounce .6s ease-in-out;
+    animation-iteration-count: 1;
+    width: 18rem;
+    height: 30rem;
+    top: -5rem;
+}
+.card-container.open .personality-card.the-box .pink-box {
+    width: 4px;
+    border-radius: 0;
+}
+
+.personality-card.card-hide {
+    transform: translateX(-10rem) scale(.9);
+    opacity: 0;
+    z-index: 50;
+}
+.personality-card.card-notshown {
+    transform: translateX(10rem) scale(.9);
+    opacity: 0;
+    z-index: 50;
+}
+
+@keyframes card-bounce {
+    0% {
+        height: 20rem;
+        width: 20rem;
+    }
+    50% {
+        width: 17rem;
+        height: 31rem
+    }
+    100% {
+        width: 18rem;
+        height: 30rem;
+    }
+}
+
+/* figures */
 .figure-circle:before {
     content: "";
     display: block;
