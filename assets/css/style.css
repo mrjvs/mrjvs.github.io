@@ -51,7 +51,7 @@ footer .txt {
 
 .box {
     text-align: center;
-    padding: 5rem;
+    padding: 5rem 5rem 0 5rem;
     background-color: #FFF;
     box-shadow: 0 3px 29px 0 rgba(0, 0, 0, 0.1);
 }
@@ -167,7 +167,8 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    padding: 0 0 5rem 0;
+    overflow-x: hidden;
 }
 .personality-card.the-box {
     height: 20rem;
@@ -252,8 +253,6 @@ a:hover {
 }
 .card-container {
     position: relative;
-}
-.card-container {
     width: 100%;
     height: 30rem;
     margin: 5rem;
@@ -288,11 +287,29 @@ a:hover {
     }
     50% {
         width: 17rem;
-        height: 31rem
+        height: 31rem;
     }
     100% {
         width: 18rem;
         height: 30rem;
+    }
+}
+
+@keyframes card-bounce-small {
+    0% {
+        height: 20rem;
+        width: 20rem;
+        left: 0;
+    }
+    50% {
+        width: 105%;
+        left: -2.5%;
+        height: 31rem;
+    }
+    100% {
+        width: 100%;
+        height: 30rem;
+        left: 0;
     }
 }
 
@@ -430,6 +447,9 @@ a:hover {
         padding: 0;
         margin: 0 1rem;
     }
+    .card-container {
+        margin: 1rem;
+    }
 }
 @media screen and (max-width: 550px) {
     header {
@@ -447,11 +467,32 @@ a:hover {
         height: 10rem;
         width: 10rem;
     }
-    .the-box {
-        height: 15rem;
-        width: 15rem;
-    }
     .portfolio-item {
         padding: 5rem 5vw;
+    }
+    .personality-card.the-box {
+        height: 15rem;
+        width: 15rem;
+        margin: 1em auto;
+        font-size: .8em;
+    }
+    .card-container {
+        margin: 1em;
+    }
+    .card-container.open .personality-card.the-box {
+        animation: card-bounce-small .6s ease-in-out;
+        animation-iteration-count: 1;
+        width: 100%;
+        height: auto;
+        top: 0;
+        font-size: 1em;
+        box-sizing: border-box;
+    }
+    .box {
+        padding: 5rem 0 0 0;
+    }
+    .box p, .box h1 {
+        padding: 0 1em;
+        box-sizing: border-box;
     }
 }
