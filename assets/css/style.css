@@ -57,7 +57,7 @@ footer .txt {
 }
 .box p {
     width: 25rem;
-    margin: auto;
+    margin: 1em auto 0 auto;
     max-width: 100%;
 }
 
