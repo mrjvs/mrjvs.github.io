@@ -492,8 +492,8 @@ a:hover {
         margin: 1em;
     }
     .card-container.open .personality-card.the-box {
-        animation: card-bounce-small .6s ease-in-out;
-        animation-iteration-count: 1;
+        /*animation: card-bounce-small .6s ease-in-out;
+        animation-iteration-count: 1;*/
         width: 100%;
         height: auto;
         top: 0;
