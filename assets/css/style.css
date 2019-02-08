@@ -306,7 +306,7 @@ a:hover {
     }
 }
 
-/*@keyframes card-bounce-small {
+@keyframes card-bounce-small {
     0% {
         height: 20rem;
         width: 20rem;
@@ -322,7 +322,7 @@ a:hover {
         height: 30rem;
         left: 0;
     }
-}*/
+}
 
 /* figures */
 .figure-circle:before {
