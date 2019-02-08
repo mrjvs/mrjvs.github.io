@@ -506,4 +506,28 @@ a:hover {
         padding: 0 1em;
         box-sizing: border-box;
     }
+    .personality-card.the-box {
+        padding: 1em .5em;
+    }
+    .personality-card.the-box .personality-card-image {
+        height: 6rem;
+        width: 6rem;
+        margin: 0 auto .5em auto;
+    }
+
+    .personality-card.the-box h1 {
+        margin: 0;
+    }
+    .personality-card.the-box .button-container {
+        padding: 1em 0;
+    }
+    .personality-card.the-box p {
+        margin-bottom: .5em;
+    }
+    .personality-card.the-box:last-child {
+        min-height: 20rem;
+    }
+    .personality-card.the-box:last-child h1 {
+        margin-bottom: .5em;
+    }
 }
