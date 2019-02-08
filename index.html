@@ -30,10 +30,10 @@
 
     <!-- styling -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- scripts -->
-    <script src="/assets/js/box.js"></script>
+    <script src="./assets/js/box.js"></script>
 </head>
 <body>
     <header>
@@ -47,24 +47,24 @@
     <section class="portfolio">
         <article class="portfolio-item">
             <div class="portfolio-image">
-                <img src="/assets/img/pretendo.png" alt="Pretendo logo">
+                <img src="./assets/img/pretendo.png" alt="Pretendo logo">
             </div>
             <div class="portfolio-text">
                 <h1>Pretendo</h1>
                 <p class="txt-subhead">Front-end web / NodeJS / Branding</p>
                 <p>Pretendo is an open source Nintendo Network replacement that aims to build custom servers for the WiiU and 3DS family of consoles. I contributed by handling the branding of the project and developing the full website including the backend.</p>
-                <a class="ico-link" href="#">Cannot be linked yet</a>
+                <a class="ico-link">Cannot be linked yet</a>
             </div>
         </article>
         <article class="portfolio-item">
             <div class="portfolio-image">
-                <img src="/assets/img/cascade.png" alt="Pretendo logo">
+                <img src="./assets/img/cascade.png" alt="Pretendo logo">
             </div>
             <div class="portfolio-text">
                 <h1>Pretendo</h1>
                 <p class="txt-subhead">Front-end web / UX design / Branding</p>
                 <p>Cascade is a discord bot that focuses on user experience and customisation. It will provide many features you can do anything with it. I contributed by doing the branding design and made sure the UX was perfect. This project has not been released yet.</p>
-                <a class="ico-link" href="#">Cannot be linked yet</a>
+                <a class="ico-link">Cannot be linked yet</a>
             </div>
         </article>
     </section>
@@ -75,21 +75,62 @@
             <div class="card-container" id="box-container">
                 <div class="personality-card the-box">
                     <div class="pink-box" onclick="openBox();"></div>
-                    <div class="personality-card-image" style="background-image: url('https://gonintendo.com/system/stories/promo_images/000/301/934/original/vic.png')"></div>
-                    <h1>Celeste</h1>
-                    <p>I absolutely love celeste, I think its the best game that exists. I has an important message about mental health that ties deeply into the gameplay and I have never experienced something like that before in my life. It felt real.</p>
+                    <div class="personality-card-image" style="background-image: url('./assets/img/design.png')"></div>
+                    <h1>Design</h1>
+                    <p>I think graphic design is of the greatest importance, It makes a product if done well and completely breaks it when done poorly. If you start a buisness you should make sure to get a designer since it does help an enormous amount in marketing.</p>
                     <div class="button-container">
                         <button onclick="nextCard(this.parentNode.parentNode);">See another</button>
                     </div>
                 </div>
 
                 <div class="personality-card the-box card-notshown">
-                    <div class="personality-card-image" style="background-image: url('https://gonintendo.com/system/stories/promo_images/000/301/934/original/vic.png')"></div>
+                    <div class="personality-card-image" style="background-image: url('./assets/img/celeste.png"></div>
                     <h1>Celeste</h1>
-                    <p>I absolutely love celeste, I think its the best game that exists. I has an important message about mental health that ties deeply into the gameplay and I have never experienced something like that before in my life. It felt real.</p>
+                    <p>Celeste is a video game about climbing a mountain and I adore it. The way the story is told, The way the graphics represent emotion. It all just consumed me for a few months and I would do everything to experience it again like I did the first time.</p>
                     <div class="button-container">
                         <button onclick="nextCard(this.parentNode.parentNode);">See another</button>
                     </div>
+                </div>
+
+                <div class="personality-card the-box card-notshown">
+                    <div class="personality-card-image" style="background-image: url('./assets/img/habbits.png')"></div>
+                    <h1>Habbits</h1>
+                    <p>I struggle maintaining habbits. I find it really hard to do a certain thing over and over again everyday or week. I just get bored of it and I can't keep myself motivated to keep going. That is also why I am really proud of myself when I finally do maintain a habbit for a while.</p>
+                    <div class="button-container">
+                        <button onclick="nextCard(this.parentNode.parentNode);">See another</button>
+                    </div>
+                </div>
+
+                <div class="personality-card the-box card-notshown">
+                    <div class="personality-card-image" style="background-image: url('./assets/img/adhd.png')"></div>
+                    <h1>ADHD</h1>
+                    <p>Did you know I have ADHD? You may think of it as a bad thing but I see it skill. My brain thinks about many things at once and thus I can come up with creative ideas and solutions. An ADHD brain is not defective, It just works a bit differently.</p>
+                    <div class="button-container">
+                        <button onclick="nextCard(this.parentNode.parentNode);">See another</button>
+                    </div>
+                </div>
+
+                <div class="personality-card the-box card-notshown">
+                    <div class="personality-card-image" style="background-image: url('./assets/img/frisbee.jpg')"></div>
+                    <h1>Frisbee</h1>
+                    <p>In there the netherlands there are a limited amount of sports that people play: Volley, Hockey, Soccer. Frisbee (which I love) is not one of the ones that are popular, most people there see it as just throwing a disk. Its quite hard to join a frisnee club because of that.</p>
+                    <div class="button-container">
+                        <button onclick="nextCard(this.parentNode.parentNode);">See another</button>
+                    </div>
+                </div>
+
+                <div class="personality-card the-box card-notshown">
+                    <div class="personality-card-image" style="background-image: url('./assets/img/undertale.png')"></div>
+                    <h1>Undertale</h1>
+                    <p>Undertale is an rpg that is a tribute to the old days. It has nice 8bit music, Enjoyable cliche characters and lots of playfull behaviour that makes you want to be a part of their world. Nothing to say about it either that I really like it.</p>
+                    <div class="button-container">
+                        <button onclick="nextCard(this.parentNode.parentNode);">See another</button>
+                    </div>
+                </div>
+
+                <div class="personality-card the-box card-notshown centered">
+                    <h1>The end</h1>
+                    <p>That was all of the personality cards, Thanks for being so interested in me. Shoot me an email if you want to chat some more.</p>
                 </div>
             </div>
         </div>
@@ -97,7 +138,7 @@
     <footer>
         <div class="txt">
             <h1>Did you enjoy it?</h1>
-            <p>If you did then <a href="#">Consider sending me an email</a>. Maybe I am interested in yourp roject and we can then work together to make your product the best. It doesn't hurt to try so please do, I am always interested in conversation.</p>
+            <p>If you did then <a href="mailto:mrjvsserver@gmail.com">Consider sending me an email</a>. Maybe I am interested in yourp roject and we can then work together to make your product the best. It doesn't hurt to try so please do, I am always interested in conversation.</p>
             <a class="ico-github" href="https://www.github.com/mrjvs">https://www.github.com/mrjvs</a><br>
             <a class="ico-twitter" href="https://www.twitter.com/TWmrjvs">https://www.twitter.com/TWmrjvs</a>
         </div>

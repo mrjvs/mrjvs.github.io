@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     font-size: 1em;
     margin: 0;
-    background-color: #F1F1F1; /* BG COLOR */
+    background-color: #F1F1F1;
     font-family: 'Open Sans', 'Segoe UI', Tahoma, Verdana, Arial, sans-serif;
 }
 
@@ -43,10 +43,10 @@ footer .txt {
 }
 
 .portfolio .portfolio-item {
-    background-color: #FFF; /* BG COLOR */
+    background-color: #FFF;
 }
 .portfolio .portfolio-item:nth-child(2n) {
-    background-color: #F6F6F6; /* BG COLOR */
+    background-color: #F6F6F6;
 }
 
 .box {
@@ -194,6 +194,16 @@ a:hover {
     left: 0;
     right: 0;
 }
+.personality-card.centered.the-box {
+    justify-content: center;
+}
+.personality-card.centered.the-box p {
+    flex: 0;
+    margin: 0;
+}
+.personality-card.the-box.the-end {
+    border-right: 4px solid #c2516b;
+}
 .personality-card.the-box .pink-box {
     background-color: #FB5A81;
     border-radius: 7px;
@@ -212,6 +222,7 @@ a:hover {
     margin: 0 auto 2rem auto;
     background-size: cover;
     border-radius: 50%;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
 }
 .personality-card.the-box h1 {
     font-size: 1.9em;
