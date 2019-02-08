@@ -291,7 +291,7 @@ a:hover {
     z-index: 50;
 }
 
-@keyframes card-bounce {
+/*@keyframes card-bounce {
     0% {
         height: 20rem;
         width: 20rem;
@@ -304,7 +304,7 @@ a:hover {
         width: 18rem;
         height: 30rem;
     }
-}
+}*/
 
 /*@keyframes card-bounce-small {
     0% {
