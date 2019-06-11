@@ -43,6 +43,10 @@ footer {
     position: relative;
 }
 
+footer.white {
+    background-color: #FFF;
+}
+
 footer .txt {
     width: 30rem;
 }
