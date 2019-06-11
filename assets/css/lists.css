@@ -1,0 +1,63 @@
+.list {
+    background-color: #F1F1F1;
+}
+
+.list div.title {
+    padding: 8rem 8rem;
+    background-color: #FFF;
+}
+
+.list div.title p {
+    max-width: 400px;
+}
+
+.list div.title p span {
+    font-weight: bold;
+    color: #000;
+}
+
+.list div.cards {
+    padding: 5rem 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 2rem;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #FFF;
+    box-shadow: 0 3px 20px 0 rgba(0,0,0,.05);
+}
+
+.card .card-image {
+    background-color: #e4e4e4;
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+}
+
+.card .card-content {
+    padding: 2rem;
+}
+
+.card .card-content h1 {
+    font-size: 1.5em;
+}
+
+.card .card-content .emp {
+    color: #000;
+}
+
+@media screen and (max-width: 670px) {
+    .list div.title {
+        padding: 5rem 2rem;
+        background-color: #FFF;
+    }
+
+    .list div.cards {
+        padding: 3rem 2rem;
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+}

@@ -18,6 +18,11 @@ header {
     position: relative;
 }
 
+header.small {
+    height: auto;
+    padding: 15rem 20vw;
+}
+
 header .scroll-text {
     display: block;
     text-align: center;
@@ -160,6 +165,22 @@ a:hover {
     background-size: 100%;
     top: -.5em;
     left: -.5em;
+}
+.ico-time {
+    padding-left: 1.5em;
+    position: relative;
+}
+.ico-time:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 1.2em;
+    width: 1.2em;
+    background-image: url('/assets/img/time.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 0;
+    left: -.1em;
 }
 
 /* the box */
@@ -413,6 +434,13 @@ a:hover {
     header {
         flex-direction: row;
         padding: 60vh 2em 2em 2em;
+    }
+    header.small {
+        padding: 10rem 3rem;
+        text-align: center;
+    }
+    header.small .figure-circle {
+        display: none;
     }
     .figure-circle {
         position: absolute;
